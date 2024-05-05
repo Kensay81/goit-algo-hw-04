@@ -62,6 +62,7 @@ print("Час виконання сортування злиттям merge_sort:
 execution_time_sorted = timeit.timeit(lambda: sorted(test_list.copy()), number=1000)
 print("Час виконання сортування вбудованним Timsort sorted():", execution_time_sorted)
 
+# Порівняння методів
 if execution_time_insertion < execution_time_merge and execution_time_insertion < execution_time_sorted:
     print("сортування вставками insertion_sort виконуеться найшвидше з 3ьох методів")
 elif execution_time_merge < execution_time_insertion and execution_time_merge < execution_time_sorted:
